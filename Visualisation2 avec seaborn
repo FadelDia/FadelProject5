@@ -1,0 +1,7 @@
+
+from matplotlib import pyplot as plt
+import seaborn as sns
+figsize = (12, 1.2 * len(_df_53['Genres'].unique()))
+plt.figure(figsize=figsize)
+sns.violinplot(_df_53, x='Score', y='Genres', inner='stick', palette='Dark2')
+sns.despine(top=True, right=True, bottom=True, left=True)
